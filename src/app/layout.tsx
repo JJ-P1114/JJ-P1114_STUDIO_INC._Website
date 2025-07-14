@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { Layout } from "@/components/Layout";
 import { PerformanceOptimizer } from "@/components/PerformanceOptimizer";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const inter = Inter({
@@ -49,6 +50,7 @@ export default function RootLayout({
           <PerformanceOptimizer />
           {children}
         </Layout>
+        <Analytics />
       </body>
     </html>
   );

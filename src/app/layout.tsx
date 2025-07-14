@@ -50,9 +50,9 @@ export default function RootLayout({
         <Layout>
           <PerformanceOptimizer />
           {children}
+          <SpeedInsights />
         </Layout>
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );

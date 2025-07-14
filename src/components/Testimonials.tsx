@@ -107,7 +107,7 @@ export function Testimonials({ service }: TestimonialsProps) {
                 </div>
                 <blockquote className="mt-8">
                   <p className="text-xl text-gray-700 italic">
-                    "{filteredTestimonials[currentIndex].quote}"
+                    <span>&quot;{filteredTestimonials[currentIndex].quote}&quot;</span>
                   </p>
                 </blockquote>
               </div>

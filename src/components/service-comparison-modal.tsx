@@ -5,10 +5,14 @@ import { Fragment } from 'react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'
 
+interface Service {
+  title: string
+}
+
 interface ServiceComparisonModalProps {
   isOpen: boolean
   onClose: () => void
-  services: any[]
+  services: Service[]
 }
 
 export function ServiceComparisonModal({

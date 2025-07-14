@@ -1,13 +1,9 @@
 'use client'
 
-import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { CheckCircleIcon, ArrowPathIcon, ChartBarIcon, LightBulbIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { CheckCircleIcon } from '@heroicons/react/24/outline'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/Footer'
-import { ContactForm } from '@/components/ContactForm'
-import { ServiceComparison } from '@/components/ServiceComparison'
-import { Testimonials } from '@/components/Testimonials'
 import Image from 'next/image'
 
 const services = [

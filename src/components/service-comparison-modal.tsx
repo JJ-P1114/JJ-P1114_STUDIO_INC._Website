@@ -5,8 +5,24 @@ import { Fragment } from 'react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'
 
+type ServiceTitle = 'Développement Web' | 'Applications Mobiles' | 'Design UX/UI' | 'Consultation'
+
+type Feature =
+  | 'Délai de livraison'
+  | 'Support technique'
+  | 'Revisions incluses'
+  | 'Maintenance'
+  | 'Formation'
+  | 'Documentation'
+  | 'API Integration'
+  | 'SEO Optimization'
+  | 'Analytics'
+  | 'Sécurité'
+
+type ServiceDetails = Record<ServiceTitle, Record<Feature, string>>
+
 interface Service {
-  title: string
+  title: ServiceTitle
 }
 
 interface ServiceComparisonModalProps {
@@ -20,7 +36,7 @@ export function ServiceComparisonModal({
   onClose,
   services
 }: ServiceComparisonModalProps) {
-  const features = [
+  const features: Feature[] = [
     'Délai de livraison',
     'Support technique',
     'Revisions incluses',
@@ -33,7 +49,7 @@ export function ServiceComparisonModal({
     'Sécurité'
   ]
 
-  const serviceDetails = {
+  const serviceDetails: ServiceDetails = {
     'Développement Web': {
       'Délai de livraison': '6-12 semaines',
       'Support technique': '12 mois',

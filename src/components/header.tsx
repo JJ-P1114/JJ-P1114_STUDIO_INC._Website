@@ -96,7 +96,7 @@ export function Header() {
               </SignedIn>
               <SignedOut>
                 <SignInButton mode="modal">
-                  <Button className="w-full mt-4" variant="outline">Se connecter</Button>
+                  <Button variant="ghost">Se connecter</Button>
                 </SignInButton>
               </SignedOut>
             </div>

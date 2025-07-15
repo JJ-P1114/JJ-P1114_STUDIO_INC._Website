@@ -108,9 +108,9 @@ export function Header() {
                   </div>
                 </SignedIn>
                 <SignedOut>
-                  <SignInButton mode="modal">
-                    <Button variant="ghost" className="w-full">Se connecter</Button>
-                  </SignInButton>
+                  <Button variant="ghost" asChild>
+                    <Link href="/login">Se connecter</Link>
+                  </Button>
                 </SignedOut>
               </div>
             </div>
